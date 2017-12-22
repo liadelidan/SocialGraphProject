@@ -55,6 +55,7 @@ for repo in count_user_commits(user):
 nodes += "],"
 links += "  ]}"
 
+
 new_data = nodes+links
 with open('data.json', 'w') as f:
-  json.dump(new_data, f)
+    f.write(new_data)
